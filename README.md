@@ -9,11 +9,11 @@
 
 此 fork 沒有串接平台掃描服務或授予任何掃描目標權限；上游候選包／Release 狀態以原 repo 為準。
 
-工坊 Fork：上游產品／授權來源為 [teddashh/ai-security-scanner](https://github.com/teddashh/ai-security-scanner)；本次協作的 Issue／PR 送到 **FreeTWAI-AI/ai-security-scanner**，不是自動送往上游。
+工坊 Fork：上游產品／授權來源為 [teddashh/ai-security-scanner](https://github.com/teddashh/ai-security-scanner)；本次協作的 Issue／PR 送到 **FreeTWAI/ai-security-scanner**，不是自動送往上游。
 
-程式／內容入口：[docs/product-spec.md](docs/product-spec.md)、[src/](src/)、[src-tauri/](src-tauri/)、[engines/](engines/)、[runtime/](runtime/)。協作先讀 [CONTRIBUTING.md](CONTRIBUTING.md)，讓 Agent 讀 [AGENTS.md](AGENTS.md)；從[本倉 Issues](https://github.com/FreeTWAI-AI/ai-security-scanner/issues)認領、[查看既有 PR](https://github.com/FreeTWAI-AI/ai-security-scanner/pulls)避免重工。
+程式／內容入口：[docs/product-spec.md](docs/product-spec.md)、[src/](src/)、[src-tauri/](src-tauri/)、[engines/](engines/)、[runtime/](runtime/)。協作先讀 [CONTRIBUTING.md](CONTRIBUTING.md)，讓 Agent 讀 [AGENTS.md](AGENTS.md)；從[本倉 Issues](https://github.com/FreeTWAI/ai-security-scanner/issues)認領、[查看既有 PR](https://github.com/FreeTWAI/ai-security-scanner/pulls)避免重工。
 
-偵測維持上游 engine 行為與證據；探測連通性不等於安全檢查。不得因公會身分掃描他人資產，真報告、憑證與內部地址不進公開 PR，也不自動送中央資料庫。 跨 repo 的協定由[中央平台](https://github.com/FreeTWAI-AI/freedom-platform)維護。
+偵測維持上游 engine 行為與證據；探測連通性不等於安全檢查。不得因公會身分掃描他人資產，真報告、憑證與內部地址不進公開 PR，也不自動送中央資料庫。 跨 repo 的協定由[中央平台](https://github.com/FreeTWAI/freedom-platform)維護。
 <!-- freedom-repository-guide:end -->
 
 [Project website](https://teddashh.github.io/ai-security-scanner/) · [繁體中文](README.zh-TW.md) · [Documentation](docs/README.md) · [Releases](https://github.com/teddashh/ai-security-scanner/releases)

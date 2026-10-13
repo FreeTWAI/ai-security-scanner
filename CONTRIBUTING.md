@@ -112,7 +112,7 @@ Keep each change focused and rewrite obsolete guidance where it lives instead of
 
 資安公會的授權範圍檢查與報告工具來源。 工坊保留上游桌面／CLI、scanner adapters 與報告程式，可用於有權測試的自有環境練習。
 
-先看[本倉 Issues](https://github.com/FreeTWAI-AI/ai-security-scanner/issues)與[現有 PR](https://github.com/FreeTWAI-AI/ai-security-scanner/pulls)。提出問題、這一輪範圍、完成條件與可投入時間，在 Issue 認領並協調重疊工作；維護者已直接派工時不必重複等待，將約定連回交接即可。使用自己的 fork／分支，PR 送到 **FreeTWAI-AI/ai-security-scanner:main**。
+先看[本倉 Issues](https://github.com/FreeTWAI/ai-security-scanner/issues)與[現有 PR](https://github.com/FreeTWAI/ai-security-scanner/pulls)。提出問題、這一輪範圍、完成條件與可投入時間，在 Issue 認領並協調重疊工作；維護者已直接派工時不必重複等待，將約定連回交接即可。使用自己的 fork／分支，PR 送到 **FreeTWAI/ai-security-scanner:main**。
 
 交給 Agent 前先讓它讀 [AGENTS.md](AGENTS.md)。PR 寫明變更用途、使用者可見結果、驗證命令、限制與原 Issue；附上可公開的合成案例或重現方式。Issue／PR 是程式協作的記錄，平台名片與公會身分不取代 repo 維護者的審查。
 
@@ -132,7 +132,7 @@ npm run typecheck
 
 ### 署名與上游
 
-工坊 Fork：上游產品／授權來源為 [teddashh/ai-security-scanner](https://github.com/teddashh/ai-security-scanner)；本次協作的 Issue／PR 送到 **FreeTWAI-AI/ai-security-scanner**，不是自動送往上游。 保留原作者與授權檔，另列真正完成文件、測試、設計、程式或協作的人。使用 AI 時如實交代協作範圍；只有實際 GitHub PR／review／合併紀錄可以作為對應貢獻證據，不能靠自填帳號推定。
+工坊 Fork：上游產品／授權來源為 [teddashh/ai-security-scanner](https://github.com/teddashh/ai-security-scanner)；本次協作的 Issue／PR 送到 **FreeTWAI/ai-security-scanner**，不是自動送往上游。 保留原作者與授權檔，另列真正完成文件、測試、設計、程式或協作的人。使用 AI 時如實交代協作範圍；只有實際 GitHub PR／review／合併紀錄可以作為對應貢獻證據，不能靠自填帳號推定。
 
 自願貢獻不保證案源、XP、收益或雇用。若產生付費合作，由當事人另定條款與 Seller 外部收款；平台不代收。秘密、客戶資料、真實交易單據與未授權素材不進公開 Issue／PR。
 <!-- freedom-repository-guide:end -->
