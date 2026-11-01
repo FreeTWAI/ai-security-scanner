@@ -17,6 +17,11 @@ Use the shortest path that matches the task.
 - [Current product review](product-audit.md) — implemented paths and remaining product work.
 - [Architecture](architecture.md) — components, trust boundaries, data model, orchestration, and report pipeline.
 - [Engine catalog](engine-catalog.md) — integrated upstream scanners and capability vocabulary.
+- [Rule definitions](rule-definitions.md) — applied security scanning rules for targets.
+- [Severity matrix](severity-matrix.md) — normalized severity categories and explanation basis.
+- [Taxonomy](taxonomy.md) — vulnerability classification taxonomy families.
+- [CLI options](cli-options.md) — documentation of available CLI options.
+- [Export formats](export-formats.md) — available formats for exporting reports.
 - [Managed runtime](managed-runtime.md) — runtime lifecycle, isolation, repair, and cleanup.
 - [Provider authorization](provider-authorization.md) — cloud authorization and isolated bootstrap.
 
