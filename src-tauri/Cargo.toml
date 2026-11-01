@@ -5,7 +5,7 @@ description = "Local-first, repeatable security assessment casework"
 authors = ["Ted Huang and ai-security-scanner contributors"]
 edition = "2024"
 license = "Apache-2.0"
-rust-version = "1.98"
+rust-version = "1.85.0"
 repository = "https://github.com/teddashh/ai-security-scanner"
 homepage = "https://github.com/teddashh/ai-security-scanner"
 readme = "../README.md"
@@ -108,6 +108,7 @@ uuid = { version = "1.25.0", features = ["v4", "serde"] }
 zeroize = { version = "1.9.0", features = ["derive"] }
 
 [dev-dependencies]
+criterion = "0.8.2"
 tempfile = "3.27.0"
 
 [target.'cfg(target_os = "linux")'.dependencies]
@@ -133,3 +134,7 @@ windows-sys = { version = "0.61.2", features = [
     "Win32_UI_Shell",
     "Win32_UI_WindowsAndMessaging",
 ] }
+
+[[bench]]
+name = "rule_engine"
+harness = false

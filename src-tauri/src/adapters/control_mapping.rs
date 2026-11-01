@@ -35,7 +35,7 @@ struct MappingCatalog {
     relationship: String,
     disclaimer: String,
     sources: Vec<FrameworkSource>,
-    controls: Vec<ControlDefinition>,
+    pub controls: Vec<ControlDefinition>,
     entries: Vec<MappingEntry>,
     /// Controls reached through a scanner's own CWE classification rather than
     /// through its rule id. Optional so a catalog may carry none.
@@ -87,22 +87,22 @@ struct ControlDefinition {
 struct CweDerivedEntry {
     control: String,
     cwe_ids: Vec<String>,
-    rationale: String,
+    pub rationale: String,
 }
 
 #[derive(Debug, Deserialize)]
 #[serde(deny_unknown_fields)]
-struct MappingEntry {
-    engine_id: String,
-    match_kind: MatchKind,
-    source_rule: String,
-    controls: Vec<String>,
-    rationale: String,
+pub struct MappingEntry {
+    pub engine_id: String,
+    pub match_kind: MatchKind,
+    pub source_rule: String,
+    pub controls: Vec<String>,
+    pub rationale: String,
 }
 
 #[derive(Debug, Clone, Copy, Deserialize, PartialEq, Eq, PartialOrd, Ord)]
 #[serde(rename_all = "snake_case")]
-enum MatchKind {
+pub enum MatchKind {
     Exact,
     Prefix,
 }
@@ -127,7 +127,7 @@ struct ValidatedCatalog {
     mapping_version: String,
     provenance: ControlMappingProvenance,
     relationship: String,
-    controls: BTreeMap<String, ControlDefinition>,
+    pub controls: BTreeMap<String, ControlDefinition>,
     entries: Vec<MappingEntry>,
     cwe_derived_controls: Vec<CweDerivedEntry>,
 }
@@ -253,14 +253,14 @@ pub(super) fn validate_current_reference(
     Ok(())
 }
 
-fn source_rule_matches(entry: &MappingEntry, source_rule: &str) -> bool {
+pub fn source_rule_matches(entry: &MappingEntry, source_rule: &str) -> bool {
     match entry.match_kind {
         MatchKind::Exact => source_rule == entry.source_rule,
         MatchKind::Prefix => source_rule.starts_with(&entry.source_rule),
     }
 }
 
-pub(super) fn lookup(
+pub fn lookup(
     engine_id: &str,
     source_rule: &str,
     ai_system_applicable: bool,
@@ -344,7 +344,7 @@ fn control_is_applicable(
 /// assigned no CWE reaches no category, which is why the trailing categories
 /// whose CWEs no scanner emits stay empty rather than being back-filled from
 /// something else.
-pub(super) fn lookup_by_cwe(
+pub fn lookup_by_cwe(
     cwe_ids: &[String],
     ai_system_applicable: bool,
     ai_generated_artifact_applicable: bool,
