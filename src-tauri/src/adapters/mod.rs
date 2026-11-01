@@ -4,7 +4,7 @@
 //! fields into the case schema; they never execute, render, or follow text from
 //! a target or a scanner result.
 
-mod control_mapping;
+pub mod control_mapping;
 
 use crate::adapter::{AdapterInput, AdapterOutput, AdapterRegistry, EngineAdapter};
 use crate::domain::{
