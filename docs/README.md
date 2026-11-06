@@ -24,10 +24,12 @@ Use the shortest path that matches the task.
 - [Export formats](export-formats.md) — available formats for exporting reports.
 - [Managed runtime](managed-runtime.md) — runtime lifecycle, isolation, repair, and cleanup.
 - [Provider authorization](provider-authorization.md) — cloud authorization and isolated bootstrap.
+- [API reference](api-reference.md) — core modules documentation for frontend and backend.
 
 ## Build and maintain
 
 - [Development status](development-status.md) — current implementation, recorded verification, and remaining work.
+- [Developer usage](developer-usage.md) — setup, build, and test instructions for contributors.
 - [Contributing](../CONTRIBUTING.md) — product priorities, implementation rules, and verification.
 - [Engine maintenance](engine-maintenance.md) — upstream updates, adapter boundaries, and patch exceptions.
 - [Engine and report-layer contracts](engine-alignment-handover.zh-TW.md) — current engine semantics, asset paths, report behavior, and completion criteria.
